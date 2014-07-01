@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8191CFA1962528A00C660B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8191CF91962528A00C660B5 /* AudioToolbox.framework */; };
+		C8191CFC1962529B00C660B5 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8191CFB1962529B00C660B5 /* OpenAL.framework */; };
+		C8191CFE196252A200C660B5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8191CFD196252A200C660B5 /* CoreAudio.framework */; };
+		C8191D00196252A900C660B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8191CFF196252A900C660B5 /* AVFoundation.framework */; };
+		C8191D451962536400C660B5 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D051962536300C660B5 /* OALAction.m */; };
+		C8191D461962536400C660B5 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D071962536300C660B5 /* OALActionManager.m */; };
+		C8191D471962536400C660B5 /* OALAudioActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D091962536300C660B5 /* OALAudioActions.m */; };
+		C8191D481962536400C660B5 /* OALUtilityActions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D0B1962536300C660B5 /* OALUtilityActions.m */; };
+		C8191D491962536400C660B5 /* OALAudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D0E1962536300C660B5 /* OALAudioTrack.m */; };
+		C8191D4A1962536400C660B5 /* OALAudioTrackNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D101962536300C660B5 /* OALAudioTrackNotifications.m */; };
+		C8191D4B1962536400C660B5 /* OALAudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D121962536300C660B5 /* OALAudioTracks.m */; };
+		C8191D4C1962536400C660B5 /* OALSimpleAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D141962536300C660B5 /* OALSimpleAudio.m */; };
+		C8191D4D1962536400C660B5 /* ALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D1A1962536300C660B5 /* ALBuffer.m */; };
+		C8191D4E1962536400C660B5 /* ALCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D1C1962536300C660B5 /* ALCaptureDevice.m */; };
+		C8191D4F1962536400C660B5 /* ALChannelSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D1E1962536300C660B5 /* ALChannelSource.m */; };
+		C8191D501962536400C660B5 /* ALContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D201962536300C660B5 /* ALContext.m */; };
+		C8191D511962536400C660B5 /* ALDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D221962536300C660B5 /* ALDevice.m */; };
+		C8191D521962536400C660B5 /* ALListener.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D241962536300C660B5 /* ALListener.m */; };
+		C8191D531962536400C660B5 /* ALSoundSourcePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D271962536400C660B5 /* ALSoundSourcePool.m */; };
+		C8191D541962536400C660B5 /* ALSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D291962536400C660B5 /* ALSource.m */; };
+		C8191D551962536400C660B5 /* ALWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D2C1962536400C660B5 /* ALWrapper.m */; };
+		C8191D561962536400C660B5 /* OpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D2E1962536400C660B5 /* OpenALManager.m */; };
+		C8191D571962536400C660B5 /* OALAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D311962536400C660B5 /* OALAudioSession.m */; };
+		C8191D581962536400C660B5 /* OALSuspendHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D331962536400C660B5 /* OALSuspendHandler.m */; };
+		C8191D591962536400C660B5 /* IOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D371962536400C660B5 /* IOSVersion.m */; };
+		C8191D5A1962536400C660B5 /* mach_timing.c in Sources */ = {isa = PBXBuildFile; fileRef = C8191D381962536400C660B5 /* mach_timing.c */; };
+		C8191D5B1962536400C660B5 /* NSMutableArray+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D3B1962536400C660B5 /* NSMutableArray+WeakReferences.m */; };
+		C8191D5C1962536400C660B5 /* NSMutableDictionary+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D3D1962536400C660B5 /* NSMutableDictionary+WeakReferences.m */; };
+		C8191D5D1962536400C660B5 /* OALAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D3F1962536400C660B5 /* OALAudioFile.m */; };
+		C8191D5E1962536400C660B5 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D421962536400C660B5 /* OALTools.m */; };
+		C8191D60196254B400C660B5 /* Kick707_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8191D5F196254B400C660B5 /* Kick707_2.mp3 */; };
+		C8C92F9C196250BA008BBA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9B196250BA008BBA9F /* Foundation.framework */; };
+		C8C92F9E196250BA008BBA9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9D196250BA008BBA9F /* CoreGraphics.framework */; };
+		C8C92FA0196250BA008BBA9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9F196250BA008BBA9F /* UIKit.framework */; };
+		C8C92FA6196250BA008BBA9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8C92FA4196250BA008BBA9F /* InfoPlist.strings */; };
+		C8C92FA8196250BA008BBA9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C92FA7196250BA008BBA9F /* main.m */; };
+		C8C92FAC196250BA008BBA9F /* VoxBBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C92FAB196250BA008BBA9F /* VoxBBAppDelegate.m */; };
+		C8C92FAF196250BA008BBA9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C92FAD196250BA008BBA9F /* Main.storyboard */; };
+		C8C92FB2196250BA008BBA9F /* VoxBBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C92FB1196250BA008BBA9F /* VoxBBViewController.m */; };
+		C8C92FB4196250BA008BBA9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C92FB3196250BA008BBA9F /* Images.xcassets */; };
+		C8C92FBB196250BA008BBA9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92FBA196250BA008BBA9F /* XCTest.framework */; };
+		C8C92FBC196250BA008BBA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9B196250BA008BBA9F /* Foundation.framework */; };
+		C8C92FBD196250BA008BBA9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9F196250BA008BBA9F /* UIKit.framework */; };
+		C8C92FC5196250BA008BBA9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8C92FC3196250BA008BBA9F /* InfoPlist.strings */; };
+		C8C92FC7196250BA008BBA9F /* VoxBBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C92FC6196250BA008BBA9F /* VoxBBTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8C92FBE196250BA008BBA9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8C92F90196250BA008BBA9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C92F97196250BA008BBA9F;
+			remoteInfo = VoxBB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8191CF91962528A00C660B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C8191CFB1962529B00C660B5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		C8191CFD196252A200C660B5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		C8191CFF196252A900C660B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C8191D031962536300C660B5 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
+		C8191D041962536300C660B5 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
+		C8191D051962536300C660B5 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
+		C8191D061962536300C660B5 /* OALActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALActionManager.h; sourceTree = "<group>"; };
+		C8191D071962536300C660B5 /* OALActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALActionManager.m; sourceTree = "<group>"; };
+		C8191D081962536300C660B5 /* OALAudioActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioActions.h; sourceTree = "<group>"; };
+		C8191D091962536300C660B5 /* OALAudioActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioActions.m; sourceTree = "<group>"; };
+		C8191D0A1962536300C660B5 /* OALUtilityActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALUtilityActions.h; sourceTree = "<group>"; };
+		C8191D0B1962536300C660B5 /* OALUtilityActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALUtilityActions.m; sourceTree = "<group>"; };
+		C8191D0D1962536300C660B5 /* OALAudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrack.h; sourceTree = "<group>"; };
+		C8191D0E1962536300C660B5 /* OALAudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrack.m; sourceTree = "<group>"; };
+		C8191D0F1962536300C660B5 /* OALAudioTrackNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrackNotifications.h; sourceTree = "<group>"; };
+		C8191D101962536300C660B5 /* OALAudioTrackNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrackNotifications.m; sourceTree = "<group>"; };
+		C8191D111962536300C660B5 /* OALAudioTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTracks.h; sourceTree = "<group>"; };
+		C8191D121962536300C660B5 /* OALAudioTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTracks.m; sourceTree = "<group>"; };
+		C8191D131962536300C660B5 /* OALSimpleAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSimpleAudio.h; sourceTree = "<group>"; };
+		C8191D141962536300C660B5 /* OALSimpleAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSimpleAudio.m; sourceTree = "<group>"; };
+		C8191D151962536300C660B5 /* ObjectAL (iOS)-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectAL (iOS)-Prefix.pch"; sourceTree = "<group>"; };
+		C8191D161962536300C660B5 /* ObjectAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectAL.h; sourceTree = "<group>"; };
+		C8191D171962536300C660B5 /* ObjectALConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALConfig.h; sourceTree = "<group>"; };
+		C8191D191962536300C660B5 /* ALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBuffer.h; sourceTree = "<group>"; };
+		C8191D1A1962536300C660B5 /* ALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBuffer.m; sourceTree = "<group>"; };
+		C8191D1B1962536300C660B5 /* ALCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCaptureDevice.h; sourceTree = "<group>"; };
+		C8191D1C1962536300C660B5 /* ALCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCaptureDevice.m; sourceTree = "<group>"; };
+		C8191D1D1962536300C660B5 /* ALChannelSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALChannelSource.h; sourceTree = "<group>"; };
+		C8191D1E1962536300C660B5 /* ALChannelSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALChannelSource.m; sourceTree = "<group>"; };
+		C8191D1F1962536300C660B5 /* ALContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALContext.h; sourceTree = "<group>"; };
+		C8191D201962536300C660B5 /* ALContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALContext.m; sourceTree = "<group>"; };
+		C8191D211962536300C660B5 /* ALDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDevice.h; sourceTree = "<group>"; };
+		C8191D221962536300C660B5 /* ALDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDevice.m; sourceTree = "<group>"; };
+		C8191D231962536300C660B5 /* ALListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALListener.h; sourceTree = "<group>"; };
+		C8191D241962536300C660B5 /* ALListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALListener.m; sourceTree = "<group>"; };
+		C8191D251962536400C660B5 /* ALSoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSource.h; sourceTree = "<group>"; };
+		C8191D261962536400C660B5 /* ALSoundSourcePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSourcePool.h; sourceTree = "<group>"; };
+		C8191D271962536400C660B5 /* ALSoundSourcePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSoundSourcePool.m; sourceTree = "<group>"; };
+		C8191D281962536400C660B5 /* ALSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSource.h; sourceTree = "<group>"; };
+		C8191D291962536400C660B5 /* ALSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSource.m; sourceTree = "<group>"; };
+		C8191D2A1962536400C660B5 /* ALTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTypes.h; sourceTree = "<group>"; };
+		C8191D2B1962536400C660B5 /* ALWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALWrapper.h; sourceTree = "<group>"; };
+		C8191D2C1962536400C660B5 /* ALWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALWrapper.m; sourceTree = "<group>"; };
+		C8191D2D1962536400C660B5 /* OpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALManager.h; sourceTree = "<group>"; };
+		C8191D2E1962536400C660B5 /* OpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALManager.m; sourceTree = "<group>"; };
+		C8191D301962536400C660B5 /* OALAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioSession.h; sourceTree = "<group>"; };
+		C8191D311962536400C660B5 /* OALAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioSession.m; sourceTree = "<group>"; };
+		C8191D321962536400C660B5 /* OALSuspendHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSuspendHandler.h; sourceTree = "<group>"; };
+		C8191D331962536400C660B5 /* OALSuspendHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSuspendHandler.m; sourceTree = "<group>"; };
+		C8191D351962536400C660B5 /* ARCSafe_MemMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSafe_MemMgmt.h; sourceTree = "<group>"; };
+		C8191D361962536400C660B5 /* IOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSVersion.h; sourceTree = "<group>"; };
+		C8191D371962536400C660B5 /* IOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSVersion.m; sourceTree = "<group>"; };
+		C8191D381962536400C660B5 /* mach_timing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_timing.c; sourceTree = "<group>"; };
+		C8191D391962536400C660B5 /* mach_timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_timing.h; sourceTree = "<group>"; };
+		C8191D3A1962536400C660B5 /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
+		C8191D3B1962536400C660B5 /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
+		C8191D3C1962536400C660B5 /* NSMutableDictionary+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+WeakReferences.h"; sourceTree = "<group>"; };
+		C8191D3D1962536400C660B5 /* NSMutableDictionary+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+WeakReferences.m"; sourceTree = "<group>"; };
+		C8191D3E1962536400C660B5 /* OALAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioFile.h; sourceTree = "<group>"; };
+		C8191D3F1962536400C660B5 /* OALAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioFile.m; sourceTree = "<group>"; };
+		C8191D401962536400C660B5 /* OALNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALNotifications.h; sourceTree = "<group>"; };
+		C8191D411962536400C660B5 /* OALTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALTools.h; sourceTree = "<group>"; };
+		C8191D421962536400C660B5 /* OALTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALTools.m; sourceTree = "<group>"; };
+		C8191D431962536400C660B5 /* ObjectALMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
+		C8191D441962536400C660B5 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		C8191D5F196254B400C660B5 /* Kick707_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kick707_2.mp3; sourceTree = "<group>"; };
+		C8C92F98196250BA008BBA9F /* VoxBB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxBB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C92F9B196250BA008BBA9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8C92F9D196250BA008BBA9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8C92F9F196250BA008BBA9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C8C92FA3196250BA008BBA9F /* VoxBB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoxBB-Info.plist"; sourceTree = "<group>"; };
+		C8C92FA5196250BA008BBA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8C92FA7196250BA008BBA9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8C92FA9196250BA008BBA9F /* VoxBB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoxBB-Prefix.pch"; sourceTree = "<group>"; };
+		C8C92FAA196250BA008BBA9F /* VoxBBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoxBBAppDelegate.h; sourceTree = "<group>"; };
+		C8C92FAB196250BA008BBA9F /* VoxBBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoxBBAppDelegate.m; sourceTree = "<group>"; };
+		C8C92FAE196250BA008BBA9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8C92FB0196250BA008BBA9F /* VoxBBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoxBBViewController.h; sourceTree = "<group>"; };
+		C8C92FB1196250BA008BBA9F /* VoxBBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoxBBViewController.m; sourceTree = "<group>"; };
+		C8C92FB3196250BA008BBA9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C8C92FB9196250BA008BBA9F /* VoxBBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxBBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C92FBA196250BA008BBA9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C8C92FC2196250BA008BBA9F /* VoxBBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoxBBTests-Info.plist"; sourceTree = "<group>"; };
+		C8C92FC4196250BA008BBA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8C92FC6196250BA008BBA9F /* VoxBBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoxBBTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8C92F95196250BA008BBA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8191D00196252A900C660B5 /* AVFoundation.framework in Frameworks */,
+				C8191CFE196252A200C660B5 /* CoreAudio.framework in Frameworks */,
+				C8191CFC1962529B00C660B5 /* OpenAL.framework in Frameworks */,
+				C8191CFA1962528A00C660B5 /* AudioToolbox.framework in Frameworks */,
+				C8C92F9E196250BA008BBA9F /* CoreGraphics.framework in Frameworks */,
+				C8C92FA0196250BA008BBA9F /* UIKit.framework in Frameworks */,
+				C8C92F9C196250BA008BBA9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8C92FB6196250BA008BBA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C92FBB196250BA008BBA9F /* XCTest.framework in Frameworks */,
+				C8C92FBD196250BA008BBA9F /* UIKit.framework in Frameworks */,
+				C8C92FBC196250BA008BBA9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8191D011962536300C660B5 /* ObjectAL (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D021962536300C660B5 /* Actions */,
+				C8191D0C1962536300C660B5 /* AudioTrack */,
+				C8191D131962536300C660B5 /* OALSimpleAudio.h */,
+				C8191D141962536300C660B5 /* OALSimpleAudio.m */,
+				C8191D151962536300C660B5 /* ObjectAL (iOS)-Prefix.pch */,
+				C8191D161962536300C660B5 /* ObjectAL.h */,
+				C8191D171962536300C660B5 /* ObjectALConfig.h */,
+				C8191D181962536300C660B5 /* OpenAL */,
+				C8191D2F1962536400C660B5 /* Session */,
+				C8191D341962536400C660B5 /* Support */,
+			);
+			path = "ObjectAL (iOS)";
+			sourceTree = "<group>";
+		};
+		C8191D021962536300C660B5 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D031962536300C660B5 /* OALAction+Private.h */,
+				C8191D041962536300C660B5 /* OALAction.h */,
+				C8191D051962536300C660B5 /* OALAction.m */,
+				C8191D061962536300C660B5 /* OALActionManager.h */,
+				C8191D071962536300C660B5 /* OALActionManager.m */,
+				C8191D081962536300C660B5 /* OALAudioActions.h */,
+				C8191D091962536300C660B5 /* OALAudioActions.m */,
+				C8191D0A1962536300C660B5 /* OALUtilityActions.h */,
+				C8191D0B1962536300C660B5 /* OALUtilityActions.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		C8191D0C1962536300C660B5 /* AudioTrack */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D0D1962536300C660B5 /* OALAudioTrack.h */,
+				C8191D0E1962536300C660B5 /* OALAudioTrack.m */,
+				C8191D0F1962536300C660B5 /* OALAudioTrackNotifications.h */,
+				C8191D101962536300C660B5 /* OALAudioTrackNotifications.m */,
+				C8191D111962536300C660B5 /* OALAudioTracks.h */,
+				C8191D121962536300C660B5 /* OALAudioTracks.m */,
+			);
+			path = AudioTrack;
+			sourceTree = "<group>";
+		};
+		C8191D181962536300C660B5 /* OpenAL */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D191962536300C660B5 /* ALBuffer.h */,
+				C8191D1A1962536300C660B5 /* ALBuffer.m */,
+				C8191D1B1962536300C660B5 /* ALCaptureDevice.h */,
+				C8191D1C1962536300C660B5 /* ALCaptureDevice.m */,
+				C8191D1D1962536300C660B5 /* ALChannelSource.h */,
+				C8191D1E1962536300C660B5 /* ALChannelSource.m */,
+				C8191D1F1962536300C660B5 /* ALContext.h */,
+				C8191D201962536300C660B5 /* ALContext.m */,
+				C8191D211962536300C660B5 /* ALDevice.h */,
+				C8191D221962536300C660B5 /* ALDevice.m */,
+				C8191D231962536300C660B5 /* ALListener.h */,
+				C8191D241962536300C660B5 /* ALListener.m */,
+				C8191D251962536400C660B5 /* ALSoundSource.h */,
+				C8191D261962536400C660B5 /* ALSoundSourcePool.h */,
+				C8191D271962536400C660B5 /* ALSoundSourcePool.m */,
+				C8191D281962536400C660B5 /* ALSource.h */,
+				C8191D291962536400C660B5 /* ALSource.m */,
+				C8191D2A1962536400C660B5 /* ALTypes.h */,
+				C8191D2B1962536400C660B5 /* ALWrapper.h */,
+				C8191D2C1962536400C660B5 /* ALWrapper.m */,
+				C8191D2D1962536400C660B5 /* OpenALManager.h */,
+				C8191D2E1962536400C660B5 /* OpenALManager.m */,
+			);
+			path = OpenAL;
+			sourceTree = "<group>";
+		};
+		C8191D2F1962536400C660B5 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D301962536400C660B5 /* OALAudioSession.h */,
+				C8191D311962536400C660B5 /* OALAudioSession.m */,
+				C8191D321962536400C660B5 /* OALSuspendHandler.h */,
+				C8191D331962536400C660B5 /* OALSuspendHandler.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		C8191D341962536400C660B5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C8191D351962536400C660B5 /* ARCSafe_MemMgmt.h */,
+				C8191D361962536400C660B5 /* IOSVersion.h */,
+				C8191D371962536400C660B5 /* IOSVersion.m */,
+				C8191D381962536400C660B5 /* mach_timing.c */,
+				C8191D391962536400C660B5 /* mach_timing.h */,
+				C8191D3A1962536400C660B5 /* NSMutableArray+WeakReferences.h */,
+				C8191D3B1962536400C660B5 /* NSMutableArray+WeakReferences.m */,
+				C8191D3C1962536400C660B5 /* NSMutableDictionary+WeakReferences.h */,
+				C8191D3D1962536400C660B5 /* NSMutableDictionary+WeakReferences.m */,
+				C8191D3E1962536400C660B5 /* OALAudioFile.h */,
+				C8191D3F1962536400C660B5 /* OALAudioFile.m */,
+				C8191D401962536400C660B5 /* OALNotifications.h */,
+				C8191D411962536400C660B5 /* OALTools.h */,
+				C8191D421962536400C660B5 /* OALTools.m */,
+				C8191D431962536400C660B5 /* ObjectALMacros.h */,
+				C8191D441962536400C660B5 /* SynthesizeSingleton.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C8C92F8F196250BA008BBA9F = {
+			isa = PBXGroup;
+			children = (
+				C8191D011962536300C660B5 /* ObjectAL (iOS) */,
+				C8C92FA1196250BA008BBA9F /* VoxBB */,
+				C8C92FC0196250BA008BBA9F /* VoxBBTests */,
+				C8C92F9A196250BA008BBA9F /* Frameworks */,
+				C8C92F99196250BA008BBA9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8C92F99196250BA008BBA9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8C92F98196250BA008BBA9F /* VoxBB.app */,
+				C8C92FB9196250BA008BBA9F /* VoxBBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8C92F9A196250BA008BBA9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8191CFF196252A900C660B5 /* AVFoundation.framework */,
+				C8191CFD196252A200C660B5 /* CoreAudio.framework */,
+				C8191CFB1962529B00C660B5 /* OpenAL.framework */,
+				C8191CF91962528A00C660B5 /* AudioToolbox.framework */,
+				C8C92F9B196250BA008BBA9F /* Foundation.framework */,
+				C8C92F9D196250BA008BBA9F /* CoreGraphics.framework */,
+				C8C92F9F196250BA008BBA9F /* UIKit.framework */,
+				C8C92FBA196250BA008BBA9F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8C92FA1196250BA008BBA9F /* VoxBB */ = {
+			isa = PBXGroup;
+			children = (
+				C8C92FAD196250BA008BBA9F /* Main.storyboard */,
+				C8C92FB0196250BA008BBA9F /* VoxBBViewController.h */,
+				C8C92FB1196250BA008BBA9F /* VoxBBViewController.m */,
+				C8191D5F196254B400C660B5 /* Kick707_2.mp3 */,
+				C8C92FB3196250BA008BBA9F /* Images.xcassets */,
+				C8C92FA2196250BA008BBA9F /* Supporting Files */,
+			);
+			path = VoxBB;
+			sourceTree = "<group>";
+		};
+		C8C92FA2196250BA008BBA9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8C92FAA196250BA008BBA9F /* VoxBBAppDelegate.h */,
+				C8C92FAB196250BA008BBA9F /* VoxBBAppDelegate.m */,
+				C8C92FA3196250BA008BBA9F /* VoxBB-Info.plist */,
+				C8C92FA4196250BA008BBA9F /* InfoPlist.strings */,
+				C8C92FA7196250BA008BBA9F /* main.m */,
+				C8C92FA9196250BA008BBA9F /* VoxBB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8C92FC0196250BA008BBA9F /* VoxBBTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8C92FC6196250BA008BBA9F /* VoxBBTests.m */,
+				C8C92FC1196250BA008BBA9F /* Supporting Files */,
+			);
+			path = VoxBBTests;
+			sourceTree = "<group>";
+		};
+		C8C92FC1196250BA008BBA9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8C92FC2196250BA008BBA9F /* VoxBBTests-Info.plist */,
+				C8C92FC3196250BA008BBA9F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8C92F97196250BA008BBA9F /* VoxBB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C92FCA196250BA008BBA9F /* Build configuration list for PBXNativeTarget "VoxBB" */;
+			buildPhases = (
+				C8C92F94196250BA008BBA9F /* Sources */,
+				C8C92F95196250BA008BBA9F /* Frameworks */,
+				C8C92F96196250BA008BBA9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoxBB;
+			productName = VoxBB;
+			productReference = C8C92F98196250BA008BBA9F /* VoxBB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8C92FB8196250BA008BBA9F /* VoxBBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C92FCD196250BA008BBA9F /* Build configuration list for PBXNativeTarget "VoxBBTests" */;
+			buildPhases = (
+				C8C92FB5196250BA008BBA9F /* Sources */,
+				C8C92FB6196250BA008BBA9F /* Frameworks */,
+				C8C92FB7196250BA008BBA9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8C92FBF196250BA008BBA9F /* PBXTargetDependency */,
+			);
+			name = VoxBBTests;
+			productName = VoxBBTests;
+			productReference = C8C92FB9196250BA008BBA9F /* VoxBBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8C92F90196250BA008BBA9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VoxBB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "David Torre";
+				TargetAttributes = {
+					C8C92FB8196250BA008BBA9F = {
+						TestTargetID = C8C92F97196250BA008BBA9F;
+					};
+				};
+			};
+			buildConfigurationList = C8C92F93196250BA008BBA9F /* Build configuration list for PBXProject "VoxBB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8C92F8F196250BA008BBA9F;
+			productRefGroup = C8C92F99196250BA008BBA9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8C92F97196250BA008BBA9F /* VoxBB */,
+				C8C92FB8196250BA008BBA9F /* VoxBBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8C92F96196250BA008BBA9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8191D60196254B400C660B5 /* Kick707_2.mp3 in Resources */,
+				C8C92FB4196250BA008BBA9F /* Images.xcassets in Resources */,
+				C8C92FA6196250BA008BBA9F /* InfoPlist.strings in Resources */,
+				C8C92FAF196250BA008BBA9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8C92FB7196250BA008BBA9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C92FC5196250BA008BBA9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8C92F94196250BA008BBA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8191D4D1962536400C660B5 /* ALBuffer.m in Sources */,
+				C8191D541962536400C660B5 /* ALSource.m in Sources */,
+				C8191D581962536400C660B5 /* OALSuspendHandler.m in Sources */,
+				C8191D4E1962536400C660B5 /* ALCaptureDevice.m in Sources */,
+				C8191D5C1962536400C660B5 /* NSMutableDictionary+WeakReferences.m in Sources */,
+				C8191D511962536400C660B5 /* ALDevice.m in Sources */,
+				C8191D501962536400C660B5 /* ALContext.m in Sources */,
+				C8191D451962536400C660B5 /* OALAction.m in Sources */,
+				C8191D5B1962536400C660B5 /* NSMutableArray+WeakReferences.m in Sources */,
+				C8191D471962536400C660B5 /* OALAudioActions.m in Sources */,
+				C8191D4A1962536400C660B5 /* OALAudioTrackNotifications.m in Sources */,
+				C8191D571962536400C660B5 /* OALAudioSession.m in Sources */,
+				C8191D531962536400C660B5 /* ALSoundSourcePool.m in Sources */,
+				C8C92FAC196250BA008BBA9F /* VoxBBAppDelegate.m in Sources */,
+				C8191D5A1962536400C660B5 /* mach_timing.c in Sources */,
+				C8191D481962536400C660B5 /* OALUtilityActions.m in Sources */,
+				C8191D4C1962536400C660B5 /* OALSimpleAudio.m in Sources */,
+				C8191D551962536400C660B5 /* ALWrapper.m in Sources */,
+				C8C92FA8196250BA008BBA9F /* main.m in Sources */,
+				C8191D591962536400C660B5 /* IOSVersion.m in Sources */,
+				C8191D491962536400C660B5 /* OALAudioTrack.m in Sources */,
+				C8191D4B1962536400C660B5 /* OALAudioTracks.m in Sources */,
+				C8191D5E1962536400C660B5 /* OALTools.m in Sources */,
+				C8C92FB2196250BA008BBA9F /* VoxBBViewController.m in Sources */,
+				C8191D461962536400C660B5 /* OALActionManager.m in Sources */,
+				C8191D4F1962536400C660B5 /* ALChannelSource.m in Sources */,
+				C8191D561962536400C660B5 /* OpenALManager.m in Sources */,
+				C8191D521962536400C660B5 /* ALListener.m in Sources */,
+				C8191D5D1962536400C660B5 /* OALAudioFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8C92FB5196250BA008BBA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C92FC7196250BA008BBA9F /* VoxBBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8C92FBF196250BA008BBA9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C92F97196250BA008BBA9F /* VoxBB */;
+			targetProxy = C8C92FBE196250BA008BBA9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8C92FA4196250BA008BBA9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8C92FA5196250BA008BBA9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C8C92FAD196250BA008BBA9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8C92FAE196250BA008BBA9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8C92FC3196250BA008BBA9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8C92FC4196250BA008BBA9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8C92FC8196250BA008BBA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C8C92FC9196250BA008BBA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8C92FCB196250BA008BBA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoxBB/VoxBB-Prefix.pch";
+				INFOPLIST_FILE = "VoxBB/VoxBB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C8C92FCC196250BA008BBA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoxBB/VoxBB-Prefix.pch";
+				INFOPLIST_FILE = "VoxBB/VoxBB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C8C92FCE196250BA008BBA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoxBB.app/VoxBB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoxBB/VoxBB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VoxBBTests/VoxBBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C8C92FCF196250BA008BBA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoxBB.app/VoxBB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoxBB/VoxBB-Prefix.pch";
+				INFOPLIST_FILE = "VoxBBTests/VoxBBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8C92F93196250BA008BBA9F /* Build configuration list for PBXProject "VoxBB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C92FC8196250BA008BBA9F /* Debug */,
+				C8C92FC9196250BA008BBA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8C92FCA196250BA008BBA9F /* Build configuration list for PBXNativeTarget "VoxBB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C92FCB196250BA008BBA9F /* Debug */,
+				C8C92FCC196250BA008BBA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8C92FCD196250BA008BBA9F /* Build configuration list for PBXNativeTarget "VoxBBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C92FCE196250BA008BBA9F /* Debug */,
+				C8C92FCF196250BA008BBA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8C92F90196250BA008BBA9F /* Project object */;
+}
