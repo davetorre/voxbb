@@ -38,6 +38,7 @@
 		C8191D5D1962536400C660B5 /* OALAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D3F1962536400C660B5 /* OALAudioFile.m */; };
 		C8191D5E1962536400C660B5 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C8191D421962536400C660B5 /* OALTools.m */; };
 		C8191D60196254B400C660B5 /* Kick707_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8191D5F196254B400C660B5 /* Kick707_2.mp3 */; };
+		C8B2A45919AC5031005CFF4D /* Snare707_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8B2A45819AC5031005CFF4D /* Snare707_2.mp3 */; };
 		C8C92F9C196250BA008BBA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9B196250BA008BBA9F /* Foundation.framework */; };
 		C8C92F9E196250BA008BBA9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9D196250BA008BBA9F /* CoreGraphics.framework */; };
 		C8C92FA0196250BA008BBA9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C92F9F196250BA008BBA9F /* UIKit.framework */; };
@@ -132,6 +133,7 @@
 		C8191D431962536400C660B5 /* ObjectALMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
 		C8191D441962536400C660B5 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		C8191D5F196254B400C660B5 /* Kick707_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kick707_2.mp3; sourceTree = "<group>"; };
+		C8B2A45819AC5031005CFF4D /* Snare707_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Snare707_2.mp3; sourceTree = "<group>"; };
 		C8C92F98196250BA008BBA9F /* VoxBB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxBB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C92F9B196250BA008BBA9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8C92F9D196250BA008BBA9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -332,6 +334,7 @@
 				C8C92FB0196250BA008BBA9F /* VoxBBViewController.h */,
 				C8C92FB1196250BA008BBA9F /* VoxBBViewController.m */,
 				C8191D5F196254B400C660B5 /* Kick707_2.mp3 */,
+				C8B2A45819AC5031005CFF4D /* Snare707_2.mp3 */,
 				C8C92FB3196250BA008BBA9F /* Images.xcassets */,
 				C8C92FA2196250BA008BBA9F /* Supporting Files */,
 			);
@@ -448,6 +451,7 @@
 			files = (
 				C8191D60196254B400C660B5 /* Kick707_2.mp3 in Resources */,
 				C8C92FB4196250BA008BBA9F /* Images.xcassets in Resources */,
+				C8B2A45919AC5031005CFF4D /* Snare707_2.mp3 in Resources */,
 				C8C92FA6196250BA008BBA9F /* InfoPlist.strings in Resources */,
 				C8C92FAF196250BA008BBA9F /* Main.storyboard in Resources */,
 			);
