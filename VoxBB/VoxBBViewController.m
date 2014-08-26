@@ -11,17 +11,35 @@
 #import "objectAl.h"
 
 @interface VoxBBViewController ()
-
+@property (strong, nonatomic) NSMutableArray *grid;
 
 @end
 
 bool playMetronome = false;
 NSThread* metronome;
-uint64_t interval = (1000 * 1000 * 1000) / 2; //120 bpm
-uint64_t intervalMax = (1000 * 1000 * 1000);
+uint64_t interval = ((1000 * 1000 * 1000) / 2) / 4; //16th notes at 120 bpm
+uint64_t intervalMax = (1000 * 1000 * 1000) / 4;
+int numDrums = 2;
+int numSteps = 16;
 
 @implementation VoxBBViewController
 
+- (NSMutableArray *)grid
+{
+    if (!_grid) {
+        _grid = [[NSMutableArray alloc] init];
+        
+        for (int drum = 0; drum < numDrums; drum++) {
+            _grid[drum] = [[NSMutableArray alloc] initWithCapacity:numDrums];
+            for (int step = 0; step < numSteps; step++)
+                _grid[drum][step] = @NO;
+        }
+        
+        _grid[0][0] = _grid[0][8]  = @YES;
+        _grid[1][4] = _grid[1][12] = @YES;
+    }
+    return _grid;
+}
 
 - (void)addTrack:(NSString*)filename
 {
@@ -67,26 +85,30 @@ uint64_t intervalMax = (1000 * 1000 * 1000);
 
 - (void) runMetronome {
     [self addTrack:@"Kick707_2.mp3"];
+    [self addTrack:@"Snare707_2.mp3"];
     
     mach_timebase_info_data_t info;
     mach_timebase_info(&info);
     
-    
-    OALAudioTrack* track = [self.audioTracks objectAtIndex:0];
     uint64_t currentTime = mach_absolute_time();
     
     currentTime *= info.numer;
     currentTime /= info.denom;
     
     uint64_t nextTime = currentTime + interval;
+    int step = 0;
     while (playMetronome) {
         if (currentTime >= nextTime) {
-            // Do some work, play the sound files or whatever you like
-            NSLog(@"Current time: %lld", currentTime);
             
-            [track play];
+            for (int drum = 0; drum < numDrums; drum++) {
+                if ([self.grid[drum][step] isEqual: @YES]) {
+                    [(OALAudioTrack*)self.audioTracks[drum] play];
+                }
+            }
             
             nextTime += interval;
+            step++;
+            if (step == numSteps) step = 0;
         }
         
         currentTime = mach_absolute_time();
